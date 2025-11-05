@@ -1,8 +1,9 @@
 name: Deploy EKS Todo App
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:  # Manual trigger only
+  # push:
+  #   branches: [main]
 
 jobs:
   deploy:

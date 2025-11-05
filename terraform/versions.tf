@@ -58,3 +58,24 @@ import {
   to = aws_codepipeline.todo_app
   id = "eks-todo-app-pipeline"
 }
+
+# Import existing VPC and networking resources
+import {
+  to = aws_vpc.main
+  id = "vpc-0123456789abcdef0"  # Replace with actual VPC ID
+}
+
+import {
+  to = aws_internet_gateway.main
+  id = "igw-0123456789abcdef0"  # Replace with actual IGW ID
+}
+
+import {
+  to = aws_eip.nat[0]
+  id = "eipalloc-0123456789abcdef0"  # Replace with actual EIP allocation ID
+}
+
+import {
+  to = aws_nat_gateway.main[0]
+  id = "nat-0123456789abcdef0"  # Replace with actual NAT gateway ID
+}

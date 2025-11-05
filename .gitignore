@@ -5,6 +5,7 @@
 .terraform.lock.hcl
 terraform/.terraform/
 eks-todo-app/terraform/.terraform/
+terraform.tfvars
 
 # Python
 __pycache__/
